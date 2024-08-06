@@ -1,7 +1,63 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 1</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #0d0d0d;
+            color: #00ff99;
+            margin: 20px;
+            padding: 20px;
+        }
+        h2 {
+            margin-top: -2%;
+            color: #ff00ff;
+        }
+        #log {
+            background: #1a1a1a;
+            border: 2px solid #00ff99;
+            padding: 10px;
+            margin-top: 20px;
+            max-height: 400px;
+            overflow-y: auto;
+            color: #00ff99;
+        }
+        ul {
+            list-style-type: none;
+            padding: -20;
+        }
+        li {
+            background: #1a1a1a;
+            border: 1px solid #00ff99;
+            margin: 5px 0;
+            padding: 5px;
+            border-radius: 5px;
+            margin-top: 0%;
+        }
+        #traversedStates {
+            margin-top: 20px;
+            border: 2px solid #ff00ff;
+            padding: 10px;
+            background: #1a1a1a;
+            color: #00ff99;
+        }
+        @keyframes neon {
+            0%, 100% {
+                text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99, 0 0 20px #00ff99, 0 0 40px #00ff99;
+            }
+            50% {
+                text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff, 0 0 80px #ff00ff;
+            }
+        }
+    </style>
+</head>
 <body>
-<h2>Tarea 1</h2>
-<p id="log"></p>
-<script type="text/javascript" src="agente.js"></script>
+    <h2>Tarea 1</h2>
+    <p id="log"></p>
+    <div id="traversedStates"></div>
+    <script type="text/javascript" src="agente.js"></script>
 </body>
 </html>
